@@ -68,24 +68,29 @@
 
 -(IBAction)blurWithTint:(id)sender{
     
-    // Might take a while if we gotta recalculate frames.
-    [NSThread detachNewThreadSelector:@selector(threadStartAnimating:) toTarget:self withObject:nil];
-    
-    // Arbitrary blur color. Fades in alpha from 0 to selected alpha.
-    [_imageView setBlurTintColor:[UIColor colorWithWhite:0.11f alpha:0.5]];
-    
-    // Recalculate frames, or risk them not showing.
-    // Call sparingly, best if everything is set before in viewDidLoad or earlier to prevent recalculation.
-    [_imageView generateBlurFramesWithCompletion:^{
+    if (!_tinted){
+        // Might take a while if we gotta recalculate frames.
+        [NSThread detachNewThreadSelector:@selector(threadStartAnimating:) toTarget:self withObject:nil];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [_spinner stopAnimating];
-        });
+        // Arbitrary blur color. Fades in alpha from 0 to selected alpha.
+        [_imageView setBlurTintColor:[UIColor colorWithWhite:0.11f alpha:0.5]];
+        
+        // Recalculate frames, or risk them not showing.
+        // Call sparingly, best if everything is set before in viewDidLoad or earlier to prevent recalculation.
+        [_imageView generateBlurFramesWithCompletion:^{
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [_spinner stopAnimating];
+            });
+            [_imageView blurInAnimationWithDuration:0.25f];
+            
+        }];
+    }
+    else{
         [_imageView blurInAnimationWithDuration:0.25f];
-        
-        // If user presses non-tint blur, know to re-calculate frames without tint.
-        _tinted = YES;
-    }];
+    }
+    // If user presses non-tint blur, know to re-calculate frames without tint.
+    _tinted = YES;
     
 }
 

@@ -30,7 +30,7 @@
 
 // Downsamples the image so we avoid needing to blur a huge image.
 -(UIImage*)downsampleImage{
-    NSData *imageAsData = UIImageJPEGRepresentation(self.baseImage, 0.25);
+    NSData *imageAsData = UIImageJPEGRepresentation(self.baseImage, 0.001);
     UIImage *downsampledImaged = [UIImage imageWithData:imageAsData];
     return downsampledImaged;
 }

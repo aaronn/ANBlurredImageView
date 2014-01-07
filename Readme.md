@@ -1,5 +1,5 @@
 # ANBlurredImageView
-Subclass of UIImageView for animating the blurring and unblurring of images with a tint color.
+Subclass of UIImageView for animating the blurring and unblurring of images with a tint color. Useful for quick transitions and bringing focus to the foreground.
 
 ![Blurred View](http://cl.ly/image/1m0O382f3g1F/blur-3.gif)
 
@@ -34,7 +34,7 @@ Set all your values as early as possible, ideally in the superview's viewDidload
 
 
 ## Demo
-Demo shows normal blurring, tinted blurring and unblurring. Switching between normal blur and tinted blurring takes some time to recalculate the frames based on image size and frame count. 
+Demo shows normal blurring, tinted blurring and unblurring. The demo uses more frames than you might need, so switching between normal blur and tinted blurring takes some time to recalculate the frames based on image size and frame count. 
 
 ## Credits
 The image box blur algorithm is from [IndieAmbitions Blog](http://indieambitions.com/idevblogaday/perform-blur-vimage-accelerate-framework-tutorial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+IndieAmbitions+%28Indie+Ambitions%29). UIImage category is modified from [ios-relatimeblur](https://github.com/alexdrone/ios-realtimeblur).

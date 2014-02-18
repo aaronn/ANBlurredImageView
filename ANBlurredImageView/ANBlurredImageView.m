@@ -20,6 +20,8 @@
 }
 
 -(void)layoutSubviews{
+    [super layoutSubviews];
+    
     _baseImage = self.image;
     [self generateBlurFramesWithCompletion:^{}];
     

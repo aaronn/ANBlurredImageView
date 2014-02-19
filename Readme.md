@@ -38,3 +38,6 @@ Demo shows normal blurring, tinted blurring and unblurring. The demo uses more f
 
 ## Credits
 The image box blur algorithm is from [IndieAmbitions Blog](http://indieambitions.com/idevblogaday/perform-blur-vimage-accelerate-framework-tutorial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+IndieAmbitions+%28Indie+Ambitions%29). UIImage category is modified from [ios-relatimeblur](https://github.com/alexdrone/ios-realtimeblur).
+
+## License
+Do whatever you'd like. I'd appreciate a link back and a mention if you use it though!

@@ -57,10 +57,13 @@
         _blurTintColor = [UIColor clearColor];
     
     // Set our blur amount, 0-1 if availabile.
-    // If < 0 or > 1, reset to 0.1f.
+    // If < 0, reset to lowest blur. If > 1, reset to highest blur.
     CGFloat blurLevel = _blurAmount;
-    if (_blurAmount < 0.0f || _blurAmount > 1.0f || !_blurAmount)
+    if (_blurAmount < 0.0f || !_blurAmount)
         blurLevel = 0.1f;
+    
+    if (_blurAmount > 1.0f)
+        blurLevel = 1.0f;
     
     UIImage *downsampledImage = [self downsampleImage];
     

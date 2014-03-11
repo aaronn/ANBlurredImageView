@@ -37,7 +37,9 @@ Set all your values as early as possible, ideally in the superview's viewDidload
 Demo shows normal blurring, tinted blurring and unblurring. The demo uses more frames than you might need, so switching between normal blur and tinted blurring takes some time to recalculate the frames based on image size and frame count. 
 
 ## Credits
-The image box blur algorithm is from [IndieAmbitions Blog](http://indieambitions.com/idevblogaday/perform-blur-vimage-accelerate-framework-tutorial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+IndieAmbitions+%28Indie+Ambitions%29). UIImage category is modified from [ios-relatimeblur](https://github.com/alexdrone/ios-realtimeblur). Follow me on twitter at [@aaronykng](http://www.twitter.com/aaronykng).
+The image box blur algorithm is from [IndieAmbitions Blog](http://indieambitions.com/idevblogaday/perform-blur-vimage-accelerate-framework-tutorial/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+IndieAmbitions+%28Indie+Ambitions%29). UIImage category is modified from [ios-relatimeblur](https://github.com/alexdrone/ios-realtimeblur). 
+
+**Follow me on Twitter at [@aaronykng](http://www.twitter.com/aaronykng) or visit me online at [aaron.ng](http://aaron.ng).**
 
 ## License
 Do whatever you'd like. I'd appreciate a link back and a mention if you use it though!

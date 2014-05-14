@@ -19,6 +19,12 @@
     return self;
 }
 
+-(void)setImage:(UIImage *)image {
+    [super setImage:image];
+    _baseImage = self.image;
+    [self generateBlurFramesWithCompletion:^{}];
+}
+
 -(void)layoutSubviews{
     [super layoutSubviews];
     

@@ -35,6 +35,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)changeImage:(id)sender{
+    UIImage *secondImage = [UIImage imageNamed:@"nebula.png"];
+    [self.imageView setImage:secondImage];
+}
+
 -(IBAction)blur:(id)sender{
     if (_tinted)
     {

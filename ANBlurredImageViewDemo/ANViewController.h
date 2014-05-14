@@ -11,6 +11,9 @@
 @interface ANViewController : UIViewController
 @property (strong) IBOutlet ANBlurredImageView *imageView;
 
+// We can change image
+@property (assign) IBOutlet UIButton *changeImageButton;
+
 // Blur without tint.
 @property (assign) IBOutlet UIButton *blurButton;
 

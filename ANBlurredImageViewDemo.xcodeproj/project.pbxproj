@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572BA8931923E351000B0D39 /* nebula.png in Resources */ = {isa = PBXBuildFile; fileRef = 572BA8921923E351000B0D39 /* nebula.png */; };
 		9356E3081879654700FF19B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9356E3071879654700FF19B0 /* Foundation.framework */; };
 		9356E30A1879654700FF19B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9356E3091879654700FF19B0 /* CoreGraphics.framework */; };
 		9356E30C1879654700FF19B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9356E30B1879654700FF19B0 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		572BA8921923E351000B0D39 /* nebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nebula.png; sourceTree = "<group>"; };
 		9356E3041879654700FF19B0 /* ANBlurredImageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANBlurredImageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9356E3071879654700FF19B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9356E3091879654700FF19B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9356E346187967B500FF19B0 /* nature.jpg */,
+				572BA8921923E351000B0D39 /* nebula.png */,
 				9356E35718796FF400FF19B0 /* Classes */,
 				9356E3161879654700FF19B0 /* ANAppDelegate.h */,
 				9356E3171879654700FF19B0 /* ANAppDelegate.m */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9356E347187967B500FF19B0 /* nature.jpg in Resources */,
+				572BA8931923E351000B0D39 /* nebula.png in Resources */,
 				9356E3201879654700FF19B0 /* Images.xcassets in Resources */,
 				9356E3121879654700FF19B0 /* InfoPlist.strings in Resources */,
 				9356E31B1879654700FF19B0 /* Main.storyboard in Resources */,

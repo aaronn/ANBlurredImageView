@@ -24,6 +24,7 @@
 		9356E347187967B500FF19B0 /* nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9356E346187967B500FF19B0 /* nature.jpg */; };
 		938C8C20187BB4480040F120 /* ANBlurredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C8C1D187BB4480040F120 /* ANBlurredImageView.m */; };
 		938C8C21187BB4480040F120 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 938C8C1F187BB4480040F120 /* UIImage+BoxBlur.m */; };
+		9E9FCB88195899F9003919BA /* ANBBlurImageView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E9FCB87195899F9003919BA /* ANBBlurImageView.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		938C8C1D187BB4480040F120 /* ANBlurredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANBlurredImageView.m; path = ANBlurredImageView/ANBlurredImageView.m; sourceTree = SOURCE_ROOT; };
 		938C8C1E187BB4480040F120 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BoxBlur.h"; path = "ANBlurredImageView/UIImage+BoxBlur.h"; sourceTree = SOURCE_ROOT; };
 		938C8C1F187BB4480040F120 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BoxBlur.m"; path = "ANBlurredImageView/UIImage+BoxBlur.m"; sourceTree = SOURCE_ROOT; };
+		9E9FCB87195899F9003919BA /* ANBBlurImageView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ANBBlurImageView.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		9356E30D1879654700FF19B0 /* ANBlurredImageViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9E9FCB87195899F9003919BA /* ANBBlurImageView.podspec */,
 				9356E346187967B500FF19B0 /* nature.jpg */,
 				9356E35718796FF400FF19B0 /* Classes */,
 				9356E3161879654700FF19B0 /* ANAppDelegate.h */,
@@ -238,6 +241,7 @@
 				9356E3201879654700FF19B0 /* Images.xcassets in Resources */,
 				9356E3121879654700FF19B0 /* InfoPlist.strings in Resources */,
 				9356E31B1879654700FF19B0 /* Main.storyboard in Resources */,
+				9E9FCB88195899F9003919BA /* ANBBlurImageView.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

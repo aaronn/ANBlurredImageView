@@ -18,7 +18,7 @@
     if (blur < 0.f || blur > 1.f) {
         blur = 0.5f;
     }
-    int boxSize = (int)(blur * 40);
+    int boxSize = (int)(blur * 100);
     boxSize = boxSize - (boxSize % 2) + 1;
     
     CGImageRef img = self.CGImage;
@@ -96,7 +96,7 @@
     if (blur < 0.f || blur > 1.f) {
         blur = 0.5f;
     }
-    int boxSize = (int)(blur * 40);
+    int boxSize = (int)(blur * 100);
     boxSize = boxSize - (boxSize % 2) + 1;
     
     CGImageRef img = self.CGImage;

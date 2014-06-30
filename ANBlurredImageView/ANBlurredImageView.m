@@ -41,6 +41,8 @@
 #pragma mark Animation Methods
 
 
+
+
 -(void)generateBlurFramesWithCompletion:(void(^)())completion{
     
     // Reset our arrays. Generate our reverse array at the same time to save work later on blurOut.

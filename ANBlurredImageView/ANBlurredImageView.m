@@ -19,15 +19,17 @@
     return self;
 }
 
--(void)layoutSubviews{
-    [super layoutSubviews];
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    [super willMoveToSuperview:newSuperview];
     
-    _baseImage = self.image;
-    [self generateBlurFramesWithCompletion:^{}];
-    
-    // Defaults
-    self.animationDuration = 0.1f;
-    self.animationRepeatCount = 1;
+    if (newSuperview) {
+        _baseImage = self.image;
+        [self generateBlurFramesWithCompletion:^{}];
+        
+        // Defaults
+        self.animationDuration = 0.1f;
+        self.animationRepeatCount = 1;
+    }
 }
 
 // Downsamples the image so we avoid needing to blur a huge image.
